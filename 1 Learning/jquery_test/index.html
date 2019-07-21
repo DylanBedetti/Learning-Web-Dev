@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .col-xs-3 {
+        display: inline-block;
+        /* padding: 30px; */
+        margin: 30px;
+        /* border: 3px solid red; */
+    }
+    .panel-heading {
+        border: 3px solid blue;
+        padding: 20px;
+    }
+    body{
+        margin: auto;
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <div class = "container">
+        <div class="jumbotron">
+            <h1>Let's Have Fun</h1>
+            <button class = "panel-button" data-panelid = "panel1">#btn1</button>
+            <button class = "panel-button" data-panelid = "panel2">#btn2</button>
+            <button class = "panel-button" data-panelid = "panel3">#btn3</button>
+            <button class = "panel-button" data-panelid = "panel4">#btn4</button>
+        </div>
+
+        <div class="row">
+            <div class = "col-xs-3">
+                <div id = "panel1" class="panel panel-primary">
+                    <div class = "panel-heading">
+                        #panel1
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+            <div class = "col-xs-3">
+                <div id = "panel2" class="panel panel-primary">
+                    <div class = "panel-heading">
+                        #panel2
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+            <div class = "col-xs-3">
+                <div id = "panel3" class="panel panel-primary">
+                    <div class = "panel-heading">
+                        #panel3
+                    </div>
+                    <div class="panel-body">
+                        content
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="../jquery-3.4.1.js"></script>
+
+    <script>
+    $(function(){
+        $("#btn1").on('mouseover', function(){
+            $("#panel1").fadeToggle(200);
+        });
+
+
+    });
+
+    </script>
+</body>
+</html>
